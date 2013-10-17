@@ -44,10 +44,6 @@
         [self.tags setBorderWidth:1.0f];
         
         [self.contentView addSubview:self.tags];
-        NSLog(@"self.subviews: %@", self.subviews);
-        NSLog(@"self.name: %@", self.name);
-        NSLog(@"self.description: %@", self.description);
-        NSLog(@"self.tags: %@", self.tags);
     }
     return self;
 }

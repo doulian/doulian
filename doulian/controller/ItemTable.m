@@ -52,9 +52,6 @@
         NSString *images = [o objectForKey:@"images"];
         item.images = [images componentsSeparatedByString:@", "];
         [self.items addObject:item];
-        NSLog(@"item: %@", item);
-        NSLog(@"item.name: %@", item.name);
-        NSLog(@"item.images: %@", item.images);
     }
 //    NSLog(@"items: %@", self.items);
 }
