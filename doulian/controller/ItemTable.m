@@ -9,6 +9,7 @@
 #import "ItemTable.h"
 #import "Item.h"
 #import "ItemCell.h"
+#import "ItemVC.h"
 
 @interface ItemTable ()
 
@@ -102,6 +103,18 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100;
+}
+
+#pragma mark - Table view
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // TODO
+    Item* item = self.items[indexPath.row];
+    ItemVC *vc = [ItemVC new];
+    vc.item = item;
+    vc.image.image = [UIImage imageNamed:item.images[0]];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:NO];
 }
 
 /*
