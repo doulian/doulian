@@ -112,7 +112,7 @@
     Item* item = self.items[indexPath.row];
     ItemVC *vc = [ItemVC new];
     vc.item = item;
-    vc.image.image = [UIImage imageNamed:item.images[0]];
+    //vc.image.image = [UIImage imageNamed:item.images[0]];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:NO];
 }

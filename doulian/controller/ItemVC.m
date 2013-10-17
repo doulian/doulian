@@ -14,7 +14,7 @@
 @end
 
 @implementation ItemVC
-static const CGFloat kImageWidth = 80;
+static const CGFloat imageWidth = 80;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,23 +32,27 @@ static const CGFloat kImageWidth = 80;
     self.navigationItem.title = self.item.name;
     
     // name
-    CGFloat x = kImageWidth + 10;
-    CGFloat y = 40;
+    CGFloat x = imageWidth + 10;
+    CGFloat y = 100;
     CGFloat leftWidth = self.view.bounds.size.width - x;
     CGFloat nameHeight = 30;
     self.name = [[UILabel alloc] initWithFrame:CGRectMake(x, y, leftWidth, nameHeight)];
     self.name.textColor = [UIColor blueColor];
+    self.name.text = self.item.name;
     [self.view addSubview:self.name];
     
     // description
     y += nameHeight + 2;
     CGFloat descHeight = 25;
     self.description = [[UILabel alloc] initWithFrame:CGRectMake(x, y, leftWidth, descHeight)];
+    self.description.text = self.item.description;
     [self.view addSubview:self.description];
     
     y += descHeight + 2;
+    CGFloat tagHeight = 50;
     // tags
-    self.tags = [[DWTagList alloc] initWithFrame:CGRectMake(x, y, leftWidth, 50.0f)];
+    self.tags = [[DWTagList alloc] initWithFrame:CGRectMake(x, y, leftWidth, tagHeight)];
+    [self.tags setTags:self.item.tags];
     [self.tags setAutomaticResize:YES];
     [self.tags setTagDelegate:self];
     
@@ -58,8 +62,9 @@ static const CGFloat kImageWidth = 80;
     [self.tags setBorderWidth:1.0f];
     [self.view addSubview:self.tags];
     
-    CGFloat imageWidth = 80;
-    self.image = [[UIImageView alloc] initWithFrame:CGRectMake(2, 2, imageWidth, imageWidth)];
+    CGFloat imageHeight = 80;
+    self.image = [[UIImageView alloc] initWithFrame:CGRectMake(10, 100, imageWidth, imageHeight)];
+    self.image.image = [UIImage imageNamed:self.item.images[0]];
     [self.view addSubview:self.image];
     
 //    HorizontalBoxes *boxes = [[HorizontalBoxes alloc] initWithFrame:CGRectMake(100, navbarHeight + 30, 200, 40)];
