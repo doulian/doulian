@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Comment.h"
+#import "CommentCell.h"
 
 @interface CommentTable : UITableViewController
 

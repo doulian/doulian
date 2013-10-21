@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Item.h"
 #import "DWTagList.h"
+#import "CommentTable.h"
 
 @interface ItemVC : UIViewController  <DWTagListDelegate>
 

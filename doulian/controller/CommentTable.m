@@ -26,6 +26,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    Comment *comment1 = [Comment new];
+    User *user1 = [User new];
+    user1.username = @"bin3";
+    comment1.user = user1;
+    comment1.commentContent = @"What a great Apple product! I love it!...";
+    NSLog(@"new comment %@", comment1.user.username);
+    NSLog(@"new comment %@", comment1.commentContent);
+    
+    Comment *comment2 = [Comment new];
+    User *user2 = [User new];
+    user2.username = @"Dan";
+    comment2.user = user2;
+    comment2.commentContent = @"What a great Apple product! I love it!...";
+    NSLog(@"new comment %@", comment2.user.username);
+    NSLog(@"new comment %@", comment2.commentContent);
+    self.comments = @[comment1, comment2];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,24 +63,38 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.comments count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"UserCommentCell";
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    CommentCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[CommentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    // Configure the cell...
+    Comment* comment = self.comments[indexPath.row];
+    cell.userName.text = comment.user.username;
+    cell.userCommentContent.text = comment.commentContent;
+    //cell.comment = comment;
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50;
 }
 
 /*

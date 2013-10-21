@@ -67,6 +67,15 @@ static const CGFloat imageWidth = 80;
     self.image.image = [UIImage imageNamed:self.item.images[0]];
     [self.view addSubview:self.image];
     
+    CommentTable *commentTable = [CommentTable new];
+    [self addChildViewController:commentTable];
+    
+    y += tagHeight + 2;
+    CGFloat height = 150;
+    CGRect rect = CGRectMake(10, y, self.view.bounds.size.width - 20, self.view.bounds.size.height - height - y - 10);
+    commentTable.view.frame = rect;
+    [self.view addSubview:commentTable.view];
+    
 //    HorizontalBoxes *boxes = [[HorizontalBoxes alloc] initWithFrame:CGRectMake(100, navbarHeight + 30, 200, 40)];
 //    [boxes setTags:@[@"2关注", @"100粉丝", @"55豆"]];
 //    [self.view addSubview:boxes];
