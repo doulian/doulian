@@ -18,12 +18,11 @@
     // Override point for customization after application launch.
     
     DiscoverVC *discoverVc = [DiscoverVC new];
-    UIImage *searchImg = [UIImage imageNamed:@"search.png"];
-    [discoverVc.tabBarItem initWithTitle:@"发现" image:searchImg tag:0];
+    discoverVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageNamed:@"search.png"] tag:0];
     UINavigationController *discoverNav = [[UINavigationController alloc] initWithRootViewController:discoverVc];
     
     SettingsVC *settingsVc = [SettingsVC new];
-    [settingsVc.tabBarItem initWithTitle:@"设置" image:[UIImage imageNamed:@"spanner.png"] tag:0];
+    settingsVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:[UIImage imageNamed:@"spanner.png"] tag:0];
     UINavigationController *settingNav = [[UINavigationController alloc] initWithRootViewController:settingsVc];
     
     UITabBarController *tab = [UITabBarController alloc];
