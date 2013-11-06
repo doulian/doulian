@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0815951F77EF43C28294532B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F80500F8F794998A5EFE640 /* libPods.a */; };
 		BA34012D1829C93E00616C8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA34012C1829C93E00616C8B /* Foundation.framework */; };
 		BA34012F1829C93E00616C8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA34012E1829C93E00616C8B /* CoreGraphics.framework */; };
 		BA3401311829C93E00616C8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3401301829C93E00616C8B /* UIKit.framework */; };
@@ -19,6 +20,17 @@
 		BA3401481829C93E00616C8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3401301829C93E00616C8B /* UIKit.framework */; };
 		BA3401501829C93E00616C8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA34014E1829C93E00616C8B /* InfoPlist.strings */; };
 		BA3401521829C93E00616C8B /* doulianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3401511829C93E00616C8B /* doulianTests.m */; };
+		BA5776521829CC6F002E9415 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5776511829CC6F002E9415 /* SettingsVC.m */; };
+		BA577656182A8BFE002E9415 /* UserInfoSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA577655182A8BFE002E9415 /* UserInfoSettingVC.m */; };
+		BA577660182A9735002E9415 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57765C182A9735002E9415 /* photo.png */; };
+		BA577661182A9735002E9415 /* piechart.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57765D182A9735002E9415 /* piechart.png */; };
+		BA577662182A9735002E9415 /* safe.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57765E182A9735002E9415 /* safe.png */; };
+		BA577664182A9D69002E9415 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577663182A9D69002E9415 /* heart.png */; };
+		BA577666182AA0E8002E9415 /* doulian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA577665182AA0E8002E9415 /* doulian.jpg */; };
+		BA577668182AAA65002E9415 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577667182AAA65002E9415 /* settings.png */; };
+		BA57766A182AAC8D002E9415 /* spanner.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577669182AAC8D002E9415 /* spanner.png */; };
+		BA57766D182AAEEC002E9415 /* DiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57766C182AAEEC002E9415 /* DiscoverVC.m */; };
+		BA57766F182AAFE5002E9415 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57766E182AAFE5002E9415 /* search.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F80500F8F794998A5EFE640 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3401291829C93E00616C8B /* doulian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doulian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA34012C1829C93E00616C8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA34012E1829C93E00616C8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +61,21 @@
 		BA34014D1829C93E00616C8B /* doulianTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "doulianTests-Info.plist"; sourceTree = "<group>"; };
 		BA34014F1829C93E00616C8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA3401511829C93E00616C8B /* doulianTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doulianTests.m; sourceTree = "<group>"; };
+		BA5776501829CC6F002E9415 /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsVC.h; path = controller/SettingsVC.h; sourceTree = "<group>"; };
+		BA5776511829CC6F002E9415 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsVC.m; path = controller/SettingsVC.m; sourceTree = "<group>"; };
+		BA577654182A8BFE002E9415 /* UserInfoSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfoSettingVC.h; path = controller/settings/UserInfoSettingVC.h; sourceTree = "<group>"; };
+		BA577655182A8BFE002E9415 /* UserInfoSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfoSettingVC.m; path = controller/settings/UserInfoSettingVC.m; sourceTree = "<group>"; };
+		BA57765C182A9735002E9415 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
+		BA57765D182A9735002E9415 /* piechart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piechart.png; sourceTree = "<group>"; };
+		BA57765E182A9735002E9415 /* safe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = safe.png; sourceTree = "<group>"; };
+		BA577663182A9D69002E9415 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		BA577665182AA0E8002E9415 /* doulian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doulian.jpg; sourceTree = "<group>"; };
+		BA577667182AAA65002E9415 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		BA577669182AAC8D002E9415 /* spanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spanner.png; sourceTree = "<group>"; };
+		BA57766B182AAEEC002E9415 /* DiscoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscoverVC.h; path = controller/DiscoverVC.h; sourceTree = "<group>"; };
+		BA57766C182AAEEC002E9415 /* DiscoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscoverVC.m; path = controller/DiscoverVC.m; sourceTree = "<group>"; };
+		BA57766E182AAFE5002E9415 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		E2F6CEBE352D4E49AEFC79CE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +86,7 @@
 				BA34012F1829C93E00616C8B /* CoreGraphics.framework in Frameworks */,
 				BA3401311829C93E00616C8B /* UIKit.framework in Frameworks */,
 				BA34012D1829C93E00616C8B /* Foundation.framework in Frameworks */,
+				0815951F77EF43C28294532B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +110,7 @@
 				BA34014B1829C93E00616C8B /* doulianTests */,
 				BA34012B1829C93E00616C8B /* Frameworks */,
 				BA34012A1829C93E00616C8B /* Products */,
+				E2F6CEBE352D4E49AEFC79CE /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +130,7 @@
 				BA34012E1829C93E00616C8B /* CoreGraphics.framework */,
 				BA3401301829C93E00616C8B /* UIKit.framework */,
 				BA3401451829C93E00616C8B /* XCTest.framework */,
+				4F80500F8F794998A5EFE640 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +138,8 @@
 		BA3401321829C93E00616C8B /* doulian */ = {
 			isa = PBXGroup;
 			children = (
+				BA57765A182A9735002E9415 /* images */,
+				BA57764F1829CBCE002E9415 /* controller */,
 				BA34013B1829C93E00616C8B /* AppDelegate.h */,
 				BA34013C1829C93E00616C8B /* AppDelegate.m */,
 				BA34013E1829C93E00616C8B /* Images.xcassets */,
@@ -144,6 +177,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BA57764F1829CBCE002E9415 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA577653182A8BB8002E9415 /* settings */,
+				BA5776501829CC6F002E9415 /* SettingsVC.h */,
+				BA5776511829CC6F002E9415 /* SettingsVC.m */,
+				BA57766B182AAEEC002E9415 /* DiscoverVC.h */,
+				BA57766C182AAEEC002E9415 /* DiscoverVC.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		BA577653182A8BB8002E9415 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				BA577654182A8BFE002E9415 /* UserInfoSettingVC.h */,
+				BA577655182A8BFE002E9415 /* UserInfoSettingVC.m */,
+			);
+			name = settings;
+			sourceTree = "<group>";
+		};
+		BA57765A182A9735002E9415 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BA577665182AA0E8002E9415 /* doulian.jpg */,
+				BA577663182A9D69002E9415 /* heart.png */,
+				BA577667182AAA65002E9415 /* settings.png */,
+				BA577669182AAC8D002E9415 /* spanner.png */,
+				BA57765C182A9735002E9415 /* photo.png */,
+				BA57766E182AAFE5002E9415 /* search.png */,
+				BA57765D182A9735002E9415 /* piechart.png */,
+				BA57765E182A9735002E9415 /* safe.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA3401551829C93E00616C8B /* Build configuration list for PBXNativeTarget "doulian" */;
 			buildPhases = (
+				EAF8E91E677A42DABCBE59F2 /* Check Pods Manifest.lock */,
 				BA3401251829C93E00616C8B /* Sources */,
 				BA3401261829C93E00616C8B /* Frameworks */,
 				BA3401271829C93E00616C8B /* Resources */,
+				BDDBDF0D66DD484DA6C65096 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,7 +290,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA577668182AAA65002E9415 /* settings.png in Resources */,
+				BA57766A182AAC8D002E9415 /* spanner.png in Resources */,
+				BA577661182A9735002E9415 /* piechart.png in Resources */,
 				BA3401371829C93E00616C8B /* InfoPlist.strings in Resources */,
+				BA577662182A9735002E9415 /* safe.png in Resources */,
+				BA57766F182AAFE5002E9415 /* search.png in Resources */,
+				BA577660182A9735002E9415 /* photo.png in Resources */,
+				BA577664182A9D69002E9415 /* heart.png in Resources */,
+				BA577666182AA0E8002E9415 /* doulian.jpg in Resources */,
 				BA34013F1829C93E00616C8B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,13 +313,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BDDBDF0D66DD484DA6C65096 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF8E91E677A42DABCBE59F2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA3401251829C93E00616C8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA577656182A8BFE002E9415 /* UserInfoSettingVC.m in Sources */,
 				BA34013D1829C93E00616C8B /* AppDelegate.m in Sources */,
 				BA3401391829C93E00616C8B /* main.m in Sources */,
+				BA57766D182AAEEC002E9415 /* DiscoverVC.m in Sources */,
+				BA5776521829CC6F002E9415 /* SettingsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +473,7 @@
 		};
 		BA3401561829C93E00616C8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F6CEBE352D4E49AEFC79CE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -371,6 +487,7 @@
 		};
 		BA3401571829C93E00616C8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F6CEBE352D4E49AEFC79CE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -443,6 +560,7 @@
 				BA3401571829C93E00616C8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA3401581829C93E00616C8B /* Build configuration list for PBXNativeTarget "doulianTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +569,7 @@
 				BA34015A1829C93E00616C8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,10 @@
+PODS:
+  - JMStaticContentTableViewController (0.1.1)
+
+DEPENDENCIES:
+  - JMStaticContentTableViewController (~> 0.1.1)
+
+SPEC CHECKSUMS:
+  JMStaticContentTableViewController: ec2ae8be90eafabe63e75e49160a2b828ae28731
+
+COCOAPODS: 0.27.1
