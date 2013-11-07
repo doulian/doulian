@@ -45,7 +45,7 @@
 
 /* Begin PBXFileReference section */
 		4F80500F8F794998A5EFE640 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA3401291829C93E00616C8B /* doulian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doulian.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3401291829C93E00616C8B /* 豆脸.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "豆脸.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA34012C1829C93E00616C8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA34012E1829C93E00616C8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BA3401301829C93E00616C8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -117,7 +117,7 @@
 		BA34012A1829C93E00616C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA3401291829C93E00616C8B /* doulian.app */,
+				BA3401291829C93E00616C8B /* 豆脸.app */,
 				BA3401441829C93E00616C8B /* doulianTests.xctest */,
 			);
 			name = Products;
@@ -232,7 +232,7 @@
 			);
 			name = doulian;
 			productName = doulian;
-			productReference = BA3401291829C93E00616C8B /* doulian.app */;
+			productReference = BA3401291829C93E00616C8B /* 豆脸.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BA3401431829C93E00616C8B /* doulianTests */ = {
@@ -480,7 +480,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "doulian/doulian-Prefix.pch";
 				INFOPLIST_FILE = "doulian/doulian-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "豆脸";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -494,7 +494,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "doulian/doulian-Prefix.pch";
 				INFOPLIST_FILE = "doulian/doulian-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "豆脸";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
