@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DiscoverVC.h"
+#import "DiscoverTable.h"
 #import "SettingsVC.h"
 
 @implementation AppDelegate
@@ -17,7 +18,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    DiscoverVC *discoverVc = [DiscoverVC new];
+//    DiscoverVC *discoverVc = [DiscoverVC new];
+    DiscoverTable *discoverVc = [DiscoverTable new];
     discoverVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageNamed:@"search.png"] tag:0];
     UINavigationController *discoverNav = [[UINavigationController alloc] initWithRootViewController:discoverVc];
     

@@ -31,6 +31,14 @@
 		BA57766A182AAC8D002E9415 /* spanner.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577669182AAC8D002E9415 /* spanner.png */; };
 		BA57766D182AAEEC002E9415 /* DiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57766C182AAEEC002E9415 /* DiscoverVC.m */; };
 		BA57766F182AAFE5002E9415 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57766E182AAFE5002E9415 /* search.png */; };
+		BA577673182BBCCA002E9415 /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA577672182BBCCA002E9415 /* UserCell.m */; };
+		BA577677182BBD54002E9415 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BA577676182BBD54002E9415 /* User.m */; };
+		BA57767A182BBDDA002E9415 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = BA577679182BBDDA002E9415 /* Item.m */; };
+		BA57767D182BC185002E9415 /* DiscoverTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57767C182BC185002E9415 /* DiscoverTable.m */; };
+		BA577680182BC357002E9415 /* boy.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57767E182BC357002E9415 /* boy.png */; };
+		BA577681182BC357002E9415 /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57767F182BC357002E9415 /* girl.png */; };
+		BA577683182BD601002E9415 /* tmall_bg_main.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577682182BD601002E9415 /* tmall_bg_main.png */; };
+		BA577689182BE469002E9415 /* DWTagList.m in Sources */ = {isa = PBXBuildFile; fileRef = BA577688182BE469002E9415 /* DWTagList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +83,19 @@
 		BA57766B182AAEEC002E9415 /* DiscoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscoverVC.h; path = controller/DiscoverVC.h; sourceTree = "<group>"; };
 		BA57766C182AAEEC002E9415 /* DiscoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscoverVC.m; path = controller/DiscoverVC.m; sourceTree = "<group>"; };
 		BA57766E182AAFE5002E9415 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		BA577671182BBCCA002E9415 /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserCell.h; path = controller/discover/UserCell.h; sourceTree = "<group>"; };
+		BA577672182BBCCA002E9415 /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserCell.m; path = controller/discover/UserCell.m; sourceTree = "<group>"; };
+		BA577675182BBD54002E9415 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = model/User.h; sourceTree = "<group>"; };
+		BA577676182BBD54002E9415 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = model/User.m; sourceTree = "<group>"; };
+		BA577678182BBDDA002E9415 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		BA577679182BBDDA002E9415 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		BA57767B182BC185002E9415 /* DiscoverTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscoverTable.h; path = controller/DiscoverTable.h; sourceTree = "<group>"; };
+		BA57767C182BC185002E9415 /* DiscoverTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscoverTable.m; path = controller/DiscoverTable.m; sourceTree = "<group>"; };
+		BA57767E182BC357002E9415 /* boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boy.png; sourceTree = "<group>"; };
+		BA57767F182BC357002E9415 /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
+		BA577682182BD601002E9415 /* tmall_bg_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmall_bg_main.png; sourceTree = "<group>"; };
+		BA577687182BE469002E9415 /* DWTagList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTagList.h; sourceTree = "<group>"; };
+		BA577688182BE469002E9415 /* DWTagList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTagList.m; sourceTree = "<group>"; };
 		E2F6CEBE352D4E49AEFC79CE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +159,8 @@
 		BA3401321829C93E00616C8B /* doulian */ = {
 			isa = PBXGroup;
 			children = (
+				BA577685182BE442002E9415 /* vendor */,
+				BA577674182BBD31002E9415 /* model */,
 				BA57765A182A9735002E9415 /* images */,
 				BA57764F1829CBCE002E9415 /* controller */,
 				BA34013B1829C93E00616C8B /* AppDelegate.h */,
@@ -180,11 +203,14 @@
 		BA57764F1829CBCE002E9415 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				BA577670182BBC89002E9415 /* discover */,
 				BA577653182A8BB8002E9415 /* settings */,
 				BA5776501829CC6F002E9415 /* SettingsVC.h */,
 				BA5776511829CC6F002E9415 /* SettingsVC.m */,
 				BA57766B182AAEEC002E9415 /* DiscoverVC.h */,
 				BA57766C182AAEEC002E9415 /* DiscoverVC.m */,
+				BA57767B182BC185002E9415 /* DiscoverTable.h */,
+				BA57767C182BC185002E9415 /* DiscoverTable.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -203,6 +229,9 @@
 			children = (
 				BA577665182AA0E8002E9415 /* doulian.jpg */,
 				BA577663182A9D69002E9415 /* heart.png */,
+				BA57767E182BC357002E9415 /* boy.png */,
+				BA57767F182BC357002E9415 /* girl.png */,
+				BA577682182BD601002E9415 /* tmall_bg_main.png */,
 				BA577667182AAA65002E9415 /* settings.png */,
 				BA577669182AAC8D002E9415 /* spanner.png */,
 				BA57765C182A9735002E9415 /* photo.png */,
@@ -211,6 +240,43 @@
 				BA57765E182A9735002E9415 /* safe.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		BA577670182BBC89002E9415 /* discover */ = {
+			isa = PBXGroup;
+			children = (
+				BA577671182BBCCA002E9415 /* UserCell.h */,
+				BA577672182BBCCA002E9415 /* UserCell.m */,
+			);
+			name = discover;
+			sourceTree = "<group>";
+		};
+		BA577674182BBD31002E9415 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BA577675182BBD54002E9415 /* User.h */,
+				BA577676182BBD54002E9415 /* User.m */,
+				BA577678182BBDDA002E9415 /* Item.h */,
+				BA577679182BBDDA002E9415 /* Item.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		BA577685182BE442002E9415 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				BA577686182BE469002E9415 /* DWTagList */,
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		BA577686182BE469002E9415 /* DWTagList */ = {
+			isa = PBXGroup;
+			children = (
+				BA577687182BE469002E9415 /* DWTagList.h */,
+				BA577688182BE469002E9415 /* DWTagList.m */,
+			);
+			path = DWTagList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,12 +359,15 @@
 				BA577668182AAA65002E9415 /* settings.png in Resources */,
 				BA57766A182AAC8D002E9415 /* spanner.png in Resources */,
 				BA577661182A9735002E9415 /* piechart.png in Resources */,
+				BA577680182BC357002E9415 /* boy.png in Resources */,
 				BA3401371829C93E00616C8B /* InfoPlist.strings in Resources */,
+				BA577681182BC357002E9415 /* girl.png in Resources */,
 				BA577662182A9735002E9415 /* safe.png in Resources */,
 				BA57766F182AAFE5002E9415 /* search.png in Resources */,
 				BA577660182A9735002E9415 /* photo.png in Resources */,
 				BA577664182A9D69002E9415 /* heart.png in Resources */,
 				BA577666182AA0E8002E9415 /* doulian.jpg in Resources */,
+				BA577683182BD601002E9415 /* tmall_bg_main.png in Resources */,
 				BA34013F1829C93E00616C8B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,10 +420,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA57767D182BC185002E9415 /* DiscoverTable.m in Sources */,
+				BA57767A182BBDDA002E9415 /* Item.m in Sources */,
 				BA577656182A8BFE002E9415 /* UserInfoSettingVC.m in Sources */,
+				BA577689182BE469002E9415 /* DWTagList.m in Sources */,
+				BA577677182BBD54002E9415 /* User.m in Sources */,
 				BA34013D1829C93E00616C8B /* AppDelegate.m in Sources */,
 				BA3401391829C93E00616C8B /* main.m in Sources */,
 				BA57766D182AAEEC002E9415 /* DiscoverVC.m in Sources */,
+				BA577673182BBCCA002E9415 /* UserCell.m in Sources */,
 				BA5776521829CC6F002E9415 /* SettingsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
