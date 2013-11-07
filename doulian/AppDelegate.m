@@ -22,7 +22,7 @@
     UINavigationController *discoverNav = [[UINavigationController alloc] initWithRootViewController:discoverVc];
     
     SettingsVC *settingsVc = [SettingsVC new];
-    settingsVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:[UIImage imageNamed:@"spanner.png"] tag:0];
+    settingsVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:[UIImage imageNamed:@"spanner.png"] tag:1];
     UINavigationController *settingNav = [[UINavigationController alloc] initWithRootViewController:settingsVc];
     
     UITabBarController *tab = [UITabBarController alloc];
