@@ -10,11 +10,14 @@
 
 @interface User : NSObject
 
-@property NSString *username;
-@property NSString *nickname;
-@property NSString *avatar;
-@property NSString *location;
-@property NSArray *wantedItems;
-@property NSArray *providedItems;
+@property (strong, nonatomic) NSString *username;
+@property (strong, nonatomic) NSString *nickname;
+@property (strong, nonatomic) NSString *avatar;
+@property (strong, nonatomic) NSString *location;
+@property (strong, nonatomic) NSArray *wantedItems;
+@property (strong, nonatomic) NSArray *providedItems;
+@property (nonatomic) int friends;
+@property (nonatomic) int followers;
+@property (nonatomic) int beans;
 
 @end

@@ -10,8 +10,8 @@
 
 @implementation UserCell
 
-const float kMargin = 55;
-const float kTagContainerWidth = 200;
+const static float kMargin = 55;
+const static float kTagContainerWidth = 200;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

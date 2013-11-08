@@ -39,6 +39,7 @@
 		BA577681182BC357002E9415 /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57767F182BC357002E9415 /* girl.png */; };
 		BA577683182BD601002E9415 /* tmall_bg_main.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577682182BD601002E9415 /* tmall_bg_main.png */; };
 		BA577689182BE469002E9415 /* DWTagList.m in Sources */ = {isa = PBXBuildFile; fileRef = BA577688182BE469002E9415 /* DWTagList.m */; };
+		BA57768C182C66DE002E9415 /* UserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57768B182C66DE002E9415 /* UserVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		BA577682182BD601002E9415 /* tmall_bg_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmall_bg_main.png; sourceTree = "<group>"; };
 		BA577687182BE469002E9415 /* DWTagList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTagList.h; sourceTree = "<group>"; };
 		BA577688182BE469002E9415 /* DWTagList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTagList.m; sourceTree = "<group>"; };
+		BA57768A182C66DE002E9415 /* UserVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserVC.h; path = controller/UserVC.h; sourceTree = "<group>"; };
+		BA57768B182C66DE002E9415 /* UserVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserVC.m; path = controller/UserVC.m; sourceTree = "<group>"; };
 		E2F6CEBE352D4E49AEFC79CE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +214,8 @@
 				BA57766C182AAEEC002E9415 /* DiscoverVC.m */,
 				BA57767B182BC185002E9415 /* DiscoverTable.h */,
 				BA57767C182BC185002E9415 /* DiscoverTable.m */,
+				BA57768A182C66DE002E9415 /* UserVC.h */,
+				BA57768B182C66DE002E9415 /* UserVC.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				BA577677182BBD54002E9415 /* User.m in Sources */,
 				BA34013D1829C93E00616C8B /* AppDelegate.m in Sources */,
 				BA3401391829C93E00616C8B /* main.m in Sources */,
+				BA57768C182C66DE002E9415 /* UserVC.m in Sources */,
 				BA57766D182AAEEC002E9415 /* DiscoverVC.m in Sources */,
 				BA577673182BBCCA002E9415 /* UserCell.m in Sources */,
 				BA5776521829CC6F002E9415 /* SettingsVC.m in Sources */,

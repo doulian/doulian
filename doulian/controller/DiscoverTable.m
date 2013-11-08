@@ -9,6 +9,7 @@
 #import "DiscoverTable.h"
 #import "User.h"
 #import "UserCell.h"
+#import "UserVC.h"
 
 @interface DiscoverTable ()
 
@@ -105,6 +106,18 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80;
+}
+
+
+#pragma mark - Table view 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // TODO
+    User* user = self.users[indexPath.row];
+    UserVC *vc = [UserVC new];
+    vc.user = user;
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*
