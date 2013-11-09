@@ -40,6 +40,15 @@
 		BA577683182BD601002E9415 /* tmall_bg_main.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577682182BD601002E9415 /* tmall_bg_main.png */; };
 		BA577689182BE469002E9415 /* DWTagList.m in Sources */ = {isa = PBXBuildFile; fileRef = BA577688182BE469002E9415 /* DWTagList.m */; };
 		BA57768C182C66DE002E9415 /* UserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57768B182C66DE002E9415 /* UserVC.m */; };
+		BA577696182D4426002E9415 /* MHTabBarActiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57768E182D4426002E9415 /* MHTabBarActiveTab.png */; };
+		BA577697182D4426002E9415 /* MHTabBarActiveTab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57768F182D4426002E9415 /* MHTabBarActiveTab@2x.png */; };
+		BA577698182D4426002E9415 /* MHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA577691182D4426002E9415 /* MHTabBarController.m */; };
+		BA577699182D4426002E9415 /* MHTabBarInactiveTab.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577692182D4426002E9415 /* MHTabBarInactiveTab.png */; };
+		BA57769A182D4426002E9415 /* MHTabBarInactiveTab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577693182D4426002E9415 /* MHTabBarInactiveTab@2x.png */; };
+		BA57769B182D4426002E9415 /* MHTabBarIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577694182D4426002E9415 /* MHTabBarIndicator.png */; };
+		BA57769C182D4426002E9415 /* MHTabBarIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577695182D4426002E9415 /* MHTabBarIndicator@2x.png */; };
+		BA57769F182D44DC002E9415 /* ItemTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57769E182D44DC002E9415 /* ItemTable.m */; };
+		BA5776A3182D4708002E9415 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5776A2182D4708002E9415 /* ItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +108,18 @@
 		BA577688182BE469002E9415 /* DWTagList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTagList.m; sourceTree = "<group>"; };
 		BA57768A182C66DE002E9415 /* UserVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserVC.h; path = controller/UserVC.h; sourceTree = "<group>"; };
 		BA57768B182C66DE002E9415 /* UserVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserVC.m; path = controller/UserVC.m; sourceTree = "<group>"; };
+		BA57768E182D4426002E9415 /* MHTabBarActiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MHTabBarActiveTab.png; sourceTree = "<group>"; };
+		BA57768F182D4426002E9415 /* MHTabBarActiveTab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MHTabBarActiveTab@2x.png"; sourceTree = "<group>"; };
+		BA577690182D4426002E9415 /* MHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTabBarController.h; sourceTree = "<group>"; };
+		BA577691182D4426002E9415 /* MHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTabBarController.m; sourceTree = "<group>"; };
+		BA577692182D4426002E9415 /* MHTabBarInactiveTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MHTabBarInactiveTab.png; sourceTree = "<group>"; };
+		BA577693182D4426002E9415 /* MHTabBarInactiveTab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MHTabBarInactiveTab@2x.png"; sourceTree = "<group>"; };
+		BA577694182D4426002E9415 /* MHTabBarIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MHTabBarIndicator.png; sourceTree = "<group>"; };
+		BA577695182D4426002E9415 /* MHTabBarIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MHTabBarIndicator@2x.png"; sourceTree = "<group>"; };
+		BA57769D182D44DC002E9415 /* ItemTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemTable.h; path = controller/ItemTable.h; sourceTree = "<group>"; };
+		BA57769E182D44DC002E9415 /* ItemTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemTable.m; path = controller/ItemTable.m; sourceTree = "<group>"; };
+		BA5776A1182D4708002E9415 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemCell.h; path = controller/item/ItemCell.h; sourceTree = "<group>"; };
+		BA5776A2182D4708002E9415 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemCell.m; path = controller/item/ItemCell.m; sourceTree = "<group>"; };
 		E2F6CEBE352D4E49AEFC79CE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,6 +227,7 @@
 		BA57764F1829CBCE002E9415 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				BA5776A0182D46D9002E9415 /* item */,
 				BA577670182BBC89002E9415 /* discover */,
 				BA577653182A8BB8002E9415 /* settings */,
 				BA5776501829CC6F002E9415 /* SettingsVC.h */,
@@ -216,6 +238,8 @@
 				BA57767C182BC185002E9415 /* DiscoverTable.m */,
 				BA57768A182C66DE002E9415 /* UserVC.h */,
 				BA57768B182C66DE002E9415 /* UserVC.m */,
+				BA57769D182D44DC002E9415 /* ItemTable.h */,
+				BA57769E182D44DC002E9415 /* ItemTable.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -270,6 +294,7 @@
 		BA577685182BE442002E9415 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				BA57768D182D4426002E9415 /* MHTabBarController */,
 				BA577686182BE469002E9415 /* DWTagList */,
 			);
 			name = vendor;
@@ -282,6 +307,30 @@
 				BA577688182BE469002E9415 /* DWTagList.m */,
 			);
 			path = DWTagList;
+			sourceTree = "<group>";
+		};
+		BA57768D182D4426002E9415 /* MHTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				BA57768E182D4426002E9415 /* MHTabBarActiveTab.png */,
+				BA57768F182D4426002E9415 /* MHTabBarActiveTab@2x.png */,
+				BA577690182D4426002E9415 /* MHTabBarController.h */,
+				BA577691182D4426002E9415 /* MHTabBarController.m */,
+				BA577692182D4426002E9415 /* MHTabBarInactiveTab.png */,
+				BA577693182D4426002E9415 /* MHTabBarInactiveTab@2x.png */,
+				BA577694182D4426002E9415 /* MHTabBarIndicator.png */,
+				BA577695182D4426002E9415 /* MHTabBarIndicator@2x.png */,
+			);
+			path = MHTabBarController;
+			sourceTree = "<group>";
+		};
+		BA5776A0182D46D9002E9415 /* item */ = {
+			isa = PBXGroup;
+			children = (
+				BA5776A1182D4708002E9415 /* ItemCell.h */,
+				BA5776A2182D4708002E9415 /* ItemCell.m */,
+			);
+			name = item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,15 +413,21 @@
 				BA577668182AAA65002E9415 /* settings.png in Resources */,
 				BA57766A182AAC8D002E9415 /* spanner.png in Resources */,
 				BA577661182A9735002E9415 /* piechart.png in Resources */,
+				BA57769A182D4426002E9415 /* MHTabBarInactiveTab@2x.png in Resources */,
 				BA577680182BC357002E9415 /* boy.png in Resources */,
 				BA3401371829C93E00616C8B /* InfoPlist.strings in Resources */,
+				BA577699182D4426002E9415 /* MHTabBarInactiveTab.png in Resources */,
 				BA577681182BC357002E9415 /* girl.png in Resources */,
 				BA577662182A9735002E9415 /* safe.png in Resources */,
 				BA57766F182AAFE5002E9415 /* search.png in Resources */,
 				BA577660182A9735002E9415 /* photo.png in Resources */,
 				BA577664182A9D69002E9415 /* heart.png in Resources */,
+				BA577696182D4426002E9415 /* MHTabBarActiveTab.png in Resources */,
 				BA577666182AA0E8002E9415 /* doulian.jpg in Resources */,
+				BA577697182D4426002E9415 /* MHTabBarActiveTab@2x.png in Resources */,
+				BA57769C182D4426002E9415 /* MHTabBarIndicator@2x.png in Resources */,
 				BA577683182BD601002E9415 /* tmall_bg_main.png in Resources */,
+				BA57769B182D4426002E9415 /* MHTabBarIndicator.png in Resources */,
 				BA34013F1829C93E00616C8B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,10 +484,13 @@
 				BA57767A182BBDDA002E9415 /* Item.m in Sources */,
 				BA577656182A8BFE002E9415 /* UserInfoSettingVC.m in Sources */,
 				BA577689182BE469002E9415 /* DWTagList.m in Sources */,
+				BA577698182D4426002E9415 /* MHTabBarController.m in Sources */,
 				BA577677182BBD54002E9415 /* User.m in Sources */,
+				BA57769F182D44DC002E9415 /* ItemTable.m in Sources */,
 				BA34013D1829C93E00616C8B /* AppDelegate.m in Sources */,
 				BA3401391829C93E00616C8B /* main.m in Sources */,
 				BA57768C182C66DE002E9415 /* UserVC.m in Sources */,
+				BA5776A3182D4708002E9415 /* ItemCell.m in Sources */,
 				BA57766D182AAEEC002E9415 /* DiscoverVC.m in Sources */,
 				BA577673182BBCCA002E9415 /* UserCell.m in Sources */,
 				BA5776521829CC6F002E9415 /* SettingsVC.m in Sources */,

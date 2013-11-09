@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "User.h"
+#import "MHTabBarController.h"
 
-@interface UserVC : UIViewController
+@interface UserVC : UIViewController <MHTabBarControllerDelegate>
 
 @property (weak, nonatomic) User *user;
 
