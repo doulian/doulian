@@ -9,12 +9,15 @@
 #import "UserVC.h"
 #import "MHTabBarController.h"
 #import "ItemTable.h"
+#import "HorizontalBoxes.h"
 
 @interface UserVC ()
 
 @end
 
 @implementation UserVC
+
+static const CGFloat kAvatarWidth = 80;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,14 +33,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.avatar = [[UIImageView alloc] initWithFrame:CGRectMake(5, 70, 80, 80)];
+    self.navigationItem.title = self.user.username;
+    
+    CGFloat navbarHeight = self.navigationController.navigationBar.bounds.size.height;
+    
+    self.avatar = [[UIImageView alloc] initWithFrame:CGRectMake(5, navbarHeight + 20, kAvatarWidth, kAvatarWidth)];
     self.avatar.backgroundColor = [UIColor clearColor];
     self.avatar.image = [UIImage imageNamed:self.user.avatar];
     [self.view addSubview:self.avatar];
     
-    self.username = [[UILabel alloc] initWithFrame:CGRectMake(90, 80, 230, 20)];
-    self.username.text = self.user.username;
-    [self.view addSubview:self.username];
+    HorizontalBoxes *boxes = [[HorizontalBoxes alloc] initWithFrame:CGRectMake(100, navbarHeight + 30, 200, 40)];
+    [boxes setTags:@[@"2关注", @"100粉丝", @"55豆"]];
+    [self.view addSubview:boxes];
     
     MHTabBarController *tab = [MHTabBarController new];
     ItemTable *wanted = [ItemTable new];
@@ -50,10 +57,6 @@
     CGRect rect = CGRectMake(0.0f, height, self.view.bounds.size.width, self.view.bounds.size.height - height);
     tab.view.frame = rect;
     [self.view addSubview:tab.view];
-    
-    self.navigationItem.title = self.user.username;
-    
-    [self.view setBackgroundColor:[UIColor greenColor]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -49,6 +49,7 @@
 		BA57769C182D4426002E9415 /* MHTabBarIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577695182D4426002E9415 /* MHTabBarIndicator@2x.png */; };
 		BA57769F182D44DC002E9415 /* ItemTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57769E182D44DC002E9415 /* ItemTable.m */; };
 		BA5776A3182D4708002E9415 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5776A2182D4708002E9415 /* ItemCell.m */; };
+		BAD9307E1832855100093B6C /* HorizontalBoxes.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9307D1832855100093B6C /* HorizontalBoxes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,8 @@
 		BA57769E182D44DC002E9415 /* ItemTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemTable.m; path = controller/ItemTable.m; sourceTree = "<group>"; };
 		BA5776A1182D4708002E9415 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemCell.h; path = controller/item/ItemCell.h; sourceTree = "<group>"; };
 		BA5776A2182D4708002E9415 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemCell.m; path = controller/item/ItemCell.m; sourceTree = "<group>"; };
+		BAD9307C1832855100093B6C /* HorizontalBoxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HorizontalBoxes.h; path = controller/user/HorizontalBoxes.h; sourceTree = "<group>"; };
+		BAD9307D1832855100093B6C /* HorizontalBoxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HorizontalBoxes.m; path = controller/user/HorizontalBoxes.m; sourceTree = "<group>"; };
 		E2F6CEBE352D4E49AEFC79CE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,6 +230,7 @@
 		BA57764F1829CBCE002E9415 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				BAD9307818327F1900093B6C /* user */,
 				BA5776A0182D46D9002E9415 /* item */,
 				BA577670182BBC89002E9415 /* discover */,
 				BA577653182A8BB8002E9415 /* settings */,
@@ -331,6 +335,15 @@
 				BA5776A2182D4708002E9415 /* ItemCell.m */,
 			);
 			name = item;
+			sourceTree = "<group>";
+		};
+		BAD9307818327F1900093B6C /* user */ = {
+			isa = PBXGroup;
+			children = (
+				BAD9307C1832855100093B6C /* HorizontalBoxes.h */,
+				BAD9307D1832855100093B6C /* HorizontalBoxes.m */,
+			);
+			name = user;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +497,7 @@
 				BA57767A182BBDDA002E9415 /* Item.m in Sources */,
 				BA577656182A8BFE002E9415 /* UserInfoSettingVC.m in Sources */,
 				BA577689182BE469002E9415 /* DWTagList.m in Sources */,
+				BAD9307E1832855100093B6C /* HorizontalBoxes.m in Sources */,
 				BA577698182D4426002E9415 /* MHTabBarController.m in Sources */,
 				BA577677182BBD54002E9415 /* User.m in Sources */,
 				BA57769F182D44DC002E9415 /* ItemTable.m in Sources */,

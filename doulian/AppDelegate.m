@@ -18,6 +18,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    NSLog(@"%@", NSStringFromCGRect([[UIScreen mainScreen] bounds]));
 //    DiscoverVC *discoverVc = [DiscoverVC new];
     DiscoverTable *discoverVc = [DiscoverTable new];
     discoverVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageNamed:@"search.png"] tag:0];

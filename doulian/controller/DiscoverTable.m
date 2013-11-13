@@ -117,7 +117,7 @@
     UserVC *vc = [UserVC new];
     vc.user = user;
     vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:vc animated:NO];
 }
 
 /*
