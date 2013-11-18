@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "Item.h"
+#import "DWTagList.h"
 
-@interface ItemCell : UITableViewCell
+@interface ItemCell : UITableViewCell <DWTagListDelegate>
 
 @property (strong, nonatomic) Item *item;
 
+@property (strong, nonatomic) UIImageView *image;
+@property (strong, nonatomic) UILabel *name;
 @property (strong, nonatomic) UILabel *description;
+@property (strong, nonatomic) DWTagList *tags;
+
+- (void)setItem:(Item *)item;
 
 @end

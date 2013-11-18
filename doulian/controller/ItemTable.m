@@ -34,6 +34,28 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"items" ofType:@"plist"];
+    NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+//    NSLog(@"data: %@", data);
+    
+    self.items = [NSMutableArray new];
+    NSEnumerator *valEnum = [data objectEnumerator];
+    for (NSDictionary *o in valEnum) {
+//        NSLog(@"o: %@", o);
+        Item *item = [Item new];
+        item.name = [o objectForKey:@"name"];
+        item.description = [o objectForKey:@"desc"];
+        NSString *tags = [o objectForKey:@"tags"];
+        item.tags = [tags componentsSeparatedByString:@", "];
+        NSString *images = [o objectForKey:@"images"];
+        item.images = [images componentsSeparatedByString:@", "];
+        [self.items addObject:item];
+        NSLog(@"item: %@", item);
+        NSLog(@"item.name: %@", item.name);
+        NSLog(@"item.images: %@", item.images);
+    }
+//    NSLog(@"items: %@", self.items);
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,7 +76,7 @@
 {
     // Return the number of rows in the section.
 //    return [self.items count];
-    return 10;
+    return [self.items count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,9 +89,19 @@
     
     // Configure the cell...
 //    Item* item = self.items[indexPath.row];
-    cell.textLabel.text = @"Item";
+//    cell.textLabel.text = @"Item";
+//    [cell setItem:self.items[indexPath.row]];
+    Item *item = self.items[indexPath.row];
+    cell.image.image = [UIImage imageNamed:item.images[0]];
+    cell.name.text = item.name;
+    cell.description.text = item.description;
+    [cell.tags setTags:item.tags];
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
 }
 
 /*

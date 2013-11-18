@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iphone</key>
+	<dict>
+		<key>name</key>
+		<string>iphone</string>
+		<key>desc</key>
+		<string>九成新iphone，刚入手</string>
+		<key>tags</key>
+		<string>iphone, apple, 手机, 苹果</string>
+		<key>images</key>
+		<string>iphone.jpg, iphone2.jpg</string>
+	</dict>
+	<key>ipad</key>
+	<dict>
+		<key>name</key>
+		<string>ipad</string>
+		<key>desc</key>
+		<string>全新ipad代购</string>
+		<key>tags</key>
+		<string>ipad, pad, apple, 苹果</string>
+		<key>images</key>
+		<string>ipad.jpg</string>
+	</dict>
+</dict>
+</plist>

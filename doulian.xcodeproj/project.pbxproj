@@ -20,6 +20,8 @@
 		BA3401481829C93E00616C8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3401301829C93E00616C8B /* UIKit.framework */; };
 		BA3401501829C93E00616C8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA34014E1829C93E00616C8B /* InfoPlist.strings */; };
 		BA3401521829C93E00616C8B /* doulianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3401511829C93E00616C8B /* doulianTests.m */; };
+		BA43E4B8183A649A008D0F1A /* iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA43E4B7183A649A008D0F1A /* iphone.jpg */; };
+		BA43E4BA183A66CD008D0F1A /* ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA43E4B9183A66CD008D0F1A /* ipad.jpg */; };
 		BA5776521829CC6F002E9415 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5776511829CC6F002E9415 /* SettingsVC.m */; };
 		BA577656182A8BFE002E9415 /* UserInfoSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA577655182A8BFE002E9415 /* UserInfoSettingVC.m */; };
 		BA577660182A9735002E9415 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA57765C182A9735002E9415 /* photo.png */; };
@@ -50,6 +52,7 @@
 		BA57769F182D44DC002E9415 /* ItemTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57769E182D44DC002E9415 /* ItemTable.m */; };
 		BA5776A3182D4708002E9415 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5776A2182D4708002E9415 /* ItemCell.m */; };
 		BAD9307E1832855100093B6C /* HorizontalBoxes.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9307D1832855100093B6C /* HorizontalBoxes.m */; };
+		BAD9308118343A4E00093B6C /* items.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAD9308018343A4E00093B6C /* items.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,8 @@
 		BA34014D1829C93E00616C8B /* doulianTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "doulianTests-Info.plist"; sourceTree = "<group>"; };
 		BA34014F1829C93E00616C8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA3401511829C93E00616C8B /* doulianTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doulianTests.m; sourceTree = "<group>"; };
+		BA43E4B7183A649A008D0F1A /* iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone.jpg; sourceTree = "<group>"; };
+		BA43E4B9183A66CD008D0F1A /* ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipad.jpg; sourceTree = "<group>"; };
 		BA5776501829CC6F002E9415 /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsVC.h; path = controller/SettingsVC.h; sourceTree = "<group>"; };
 		BA5776511829CC6F002E9415 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsVC.m; path = controller/SettingsVC.m; sourceTree = "<group>"; };
 		BA577654182A8BFE002E9415 /* UserInfoSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfoSettingVC.h; path = controller/settings/UserInfoSettingVC.h; sourceTree = "<group>"; };
@@ -123,6 +128,7 @@
 		BA5776A2182D4708002E9415 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemCell.m; path = controller/item/ItemCell.m; sourceTree = "<group>"; };
 		BAD9307C1832855100093B6C /* HorizontalBoxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HorizontalBoxes.h; path = controller/user/HorizontalBoxes.h; sourceTree = "<group>"; };
 		BAD9307D1832855100093B6C /* HorizontalBoxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HorizontalBoxes.m; path = controller/user/HorizontalBoxes.m; sourceTree = "<group>"; };
+		BAD9308018343A4E00093B6C /* items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = items.plist; sourceTree = "<group>"; };
 		E2F6CEBE352D4E49AEFC79CE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +192,7 @@
 		BA3401321829C93E00616C8B /* doulian */ = {
 			isa = PBXGroup;
 			children = (
+				BAD9307F18343A0200093B6C /* resource */,
 				BA577685182BE442002E9415 /* vendor */,
 				BA577674182BBD31002E9415 /* model */,
 				BA57765A182A9735002E9415 /* images */,
@@ -262,7 +269,9 @@
 			children = (
 				BA577665182AA0E8002E9415 /* doulian.jpg */,
 				BA577663182A9D69002E9415 /* heart.png */,
+				BA43E4B7183A649A008D0F1A /* iphone.jpg */,
 				BA57767E182BC357002E9415 /* boy.png */,
+				BA43E4B9183A66CD008D0F1A /* ipad.jpg */,
 				BA57767F182BC357002E9415 /* girl.png */,
 				BA577682182BD601002E9415 /* tmall_bg_main.png */,
 				BA577667182AAA65002E9415 /* settings.png */,
@@ -344,6 +353,14 @@
 				BAD9307D1832855100093B6C /* HorizontalBoxes.m */,
 			);
 			name = user;
+			sourceTree = "<group>";
+		};
+		BAD9307F18343A0200093B6C /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				BAD9308018343A4E00093B6C /* items.plist */,
+			);
+			name = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,14 +451,17 @@
 				BA577662182A9735002E9415 /* safe.png in Resources */,
 				BA57766F182AAFE5002E9415 /* search.png in Resources */,
 				BA577660182A9735002E9415 /* photo.png in Resources */,
+				BAD9308118343A4E00093B6C /* items.plist in Resources */,
 				BA577664182A9D69002E9415 /* heart.png in Resources */,
 				BA577696182D4426002E9415 /* MHTabBarActiveTab.png in Resources */,
 				BA577666182AA0E8002E9415 /* doulian.jpg in Resources */,
 				BA577697182D4426002E9415 /* MHTabBarActiveTab@2x.png in Resources */,
 				BA57769C182D4426002E9415 /* MHTabBarIndicator@2x.png in Resources */,
 				BA577683182BD601002E9415 /* tmall_bg_main.png in Resources */,
+				BA43E4B8183A649A008D0F1A /* iphone.jpg in Resources */,
 				BA57769B182D4426002E9415 /* MHTabBarIndicator.png in Resources */,
 				BA34013F1829C93E00616C8B /* Images.xcassets in Resources */,
+				BA43E4BA183A66CD008D0F1A /* ipad.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

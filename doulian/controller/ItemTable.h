@@ -10,6 +10,6 @@
 
 @interface ItemTable : UITableViewController
 
-@property (strong, nonatomic) NSArray *items;
+@property (strong, nonatomic) NSMutableArray *items;
 
 @end

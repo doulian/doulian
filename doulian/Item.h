@@ -10,6 +10,7 @@
 
 @interface Item : NSObject
 
+@property NSString *name;
 @property NSString *description;
 @property NSArray *tags;
 @property NSArray *images;
