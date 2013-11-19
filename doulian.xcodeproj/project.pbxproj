@@ -51,6 +51,9 @@
 		BA57769C182D4426002E9415 /* MHTabBarIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA577695182D4426002E9415 /* MHTabBarIndicator@2x.png */; };
 		BA57769F182D44DC002E9415 /* ItemTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57769E182D44DC002E9415 /* ItemTable.m */; };
 		BA5776A3182D4708002E9415 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5776A2182D4708002E9415 /* ItemCell.m */; };
+		BA89B54A183B94B300B7BA02 /* button_back.png in Resources */ = {isa = PBXBuildFile; fileRef = BA89B549183B94B300B7BA02 /* button_back.png */; };
+		BA89B54C183B952C00B7BA02 /* button_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = BA89B54B183B952C00B7BA02 /* button_normal.png */; };
+		BAA3C578183B8BA8002B2F1C /* navbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA3C577183B8BA8002B2F1C /* navbar_bg.png */; };
 		BAD9307E1832855100093B6C /* HorizontalBoxes.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9307D1832855100093B6C /* HorizontalBoxes.m */; };
 		BAD9308118343A4E00093B6C /* items.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAD9308018343A4E00093B6C /* items.plist */; };
 /* End PBXBuildFile section */
@@ -126,6 +129,9 @@
 		BA57769E182D44DC002E9415 /* ItemTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemTable.m; path = controller/ItemTable.m; sourceTree = "<group>"; };
 		BA5776A1182D4708002E9415 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemCell.h; path = controller/item/ItemCell.h; sourceTree = "<group>"; };
 		BA5776A2182D4708002E9415 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemCell.m; path = controller/item/ItemCell.m; sourceTree = "<group>"; };
+		BA89B549183B94B300B7BA02 /* button_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_back.png; sourceTree = "<group>"; };
+		BA89B54B183B952C00B7BA02 /* button_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_normal.png; sourceTree = "<group>"; };
+		BAA3C577183B8BA8002B2F1C /* navbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbar_bg.png; sourceTree = "<group>"; };
 		BAD9307C1832855100093B6C /* HorizontalBoxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HorizontalBoxes.h; path = controller/user/HorizontalBoxes.h; sourceTree = "<group>"; };
 		BAD9307D1832855100093B6C /* HorizontalBoxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HorizontalBoxes.m; path = controller/user/HorizontalBoxes.m; sourceTree = "<group>"; };
 		BAD9308018343A4E00093B6C /* items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = items.plist; sourceTree = "<group>"; };
@@ -272,6 +278,9 @@
 				BA43E4B7183A649A008D0F1A /* iphone.jpg */,
 				BA57767E182BC357002E9415 /* boy.png */,
 				BA43E4B9183A66CD008D0F1A /* ipad.jpg */,
+				BAA3C577183B8BA8002B2F1C /* navbar_bg.png */,
+				BA89B54B183B952C00B7BA02 /* button_normal.png */,
+				BA89B549183B94B300B7BA02 /* button_back.png */,
 				BA57767F182BC357002E9415 /* girl.png */,
 				BA577682182BD601002E9415 /* tmall_bg_main.png */,
 				BA577667182AAA65002E9415 /* settings.png */,
@@ -440,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA3C578183B8BA8002B2F1C /* navbar_bg.png in Resources */,
 				BA577668182AAA65002E9415 /* settings.png in Resources */,
 				BA57766A182AAC8D002E9415 /* spanner.png in Resources */,
 				BA577661182A9735002E9415 /* piechart.png in Resources */,
@@ -456,11 +466,13 @@
 				BA577696182D4426002E9415 /* MHTabBarActiveTab.png in Resources */,
 				BA577666182AA0E8002E9415 /* doulian.jpg in Resources */,
 				BA577697182D4426002E9415 /* MHTabBarActiveTab@2x.png in Resources */,
+				BA89B54C183B952C00B7BA02 /* button_normal.png in Resources */,
 				BA57769C182D4426002E9415 /* MHTabBarIndicator@2x.png in Resources */,
 				BA577683182BD601002E9415 /* tmall_bg_main.png in Resources */,
 				BA43E4B8183A649A008D0F1A /* iphone.jpg in Resources */,
 				BA57769B182D4426002E9415 /* MHTabBarIndicator.png in Resources */,
 				BA34013F1829C93E00616C8B /* Images.xcassets in Resources */,
+				BA89B54A183B94B300B7BA02 /* button_back.png in Resources */,
 				BA43E4BA183A66CD008D0F1A /* ipad.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
