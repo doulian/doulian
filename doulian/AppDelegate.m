@@ -44,6 +44,13 @@
     UIImage *barButtonImage = [[UIImage imageNamed:@"button_normal"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 6, 0, 6)];
     [[UIBarButtonItem appearance] setBackgroundImage:barButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
+    NSDictionary *attributes = @{
+                                 NSForegroundColorAttributeName: [UIColor whiteColor]
+                                 };
+    
+    [[UIBarButtonItem appearance] setTitleTextAttributes:attributes
+                                                forState:UIControlStateNormal];
+    
     
     DiscoverTable *discoverVc = [DiscoverTable new];
     discoverVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageNamed:@"search.png"] tag:0];
