@@ -22,15 +22,17 @@
         CGFloat x = imageWidth + 10;
         CGFloat y = 2;
         CGFloat leftWidth = self.contentView.bounds.size.width - x;
-        CGFloat nameHeight = 25;
+        CGFloat nameHeight = 30;
         self.name = [[UILabel alloc] initWithFrame:CGRectMake(x, y, leftWidth, nameHeight)];
+//        self.name.font = [UIFont fontWithName:@"Arial" size:30.0f];
+        self.name.textColor = [UIColor blueColor];
         [self.contentView addSubview:self.name];
         
         y += nameHeight + 2;
         CGFloat descHeight = 25;
         self.description = [[UILabel alloc] initWithFrame:CGRectMake(x, y, leftWidth, descHeight)];
         [self.contentView addSubview:self.description];
-        y += descHeight + 10;
+        y += descHeight + 2;
         
         self.tags = [[DWTagList alloc] initWithFrame:CGRectMake(x, y, leftWidth, 50.0f)];
         [self.tags setAutomaticResize:YES];
