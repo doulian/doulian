@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0815951F77EF43C28294532B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F80500F8F794998A5EFE640 /* libPods.a */; };
+		5C0A73E5180FD6F700D23F05 /* ItemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A73E4180FD6F700D23F05 /* ItemVC.m */; };
 		BA34012D1829C93E00616C8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA34012C1829C93E00616C8B /* Foundation.framework */; };
 		BA34012F1829C93E00616C8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA34012E1829C93E00616C8B /* CoreGraphics.framework */; };
 		BA3401311829C93E00616C8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3401301829C93E00616C8B /* UIKit.framework */; };
@@ -70,6 +71,8 @@
 
 /* Begin PBXFileReference section */
 		4F80500F8F794998A5EFE640 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0A73E3180FD6F700D23F05 /* ItemVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemVC.h; path = controller/ItemVC.h; sourceTree = "<group>"; };
+		5C0A73E4180FD6F700D23F05 /* ItemVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemVC.m; path = controller/ItemVC.m; sourceTree = "<group>"; };
 		BA3401291829C93E00616C8B /* 豆脸.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "豆脸.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA34012C1829C93E00616C8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA34012E1829C93E00616C8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -257,6 +260,8 @@
 				BA57768B182C66DE002E9415 /* UserVC.m */,
 				BA57769D182D44DC002E9415 /* ItemTable.h */,
 				BA57769E182D44DC002E9415 /* ItemTable.m */,
+				5C0A73E3180FD6F700D23F05 /* ItemVC.h */,
+				5C0A73E4180FD6F700D23F05 /* ItemVC.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -533,6 +538,7 @@
 				BA577698182D4426002E9415 /* MHTabBarController.m in Sources */,
 				BA577677182BBD54002E9415 /* User.m in Sources */,
 				BA57769F182D44DC002E9415 /* ItemTable.m in Sources */,
+				5C0A73E5180FD6F700D23F05 /* ItemVC.m in Sources */,
 				BA34013D1829C93E00616C8B /* AppDelegate.m in Sources */,
 				BA3401391829C93E00616C8B /* main.m in Sources */,
 				BA57768C182C66DE002E9415 /* UserVC.m in Sources */,
