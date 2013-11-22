@@ -11,6 +11,9 @@
 		5C0A73E5180FD6F700D23F05 /* ItemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A73E4180FD6F700D23F05 /* ItemVC.m */; };
 		BA0A098A183BA1DD003D9FE6 /* common_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BA0A0989183BA1DD003D9FE6 /* common_bg.png */; };
 		BA0A098C183BA499003D9FE6 /* cell_middle.png in Resources */ = {isa = PBXBuildFile; fileRef = BA0A098B183BA499003D9FE6 /* cell_middle.png */; };
+		5C6EB39318114F8F004E2CB2 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EB39218114F8F004E2CB2 /* Comment.m */; };
+		5C6EB39618115269004E2CB2 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EB39518115269004E2CB2 /* CommentCell.m */; };
+		5C6EB39918115910004E2CB2 /* CommentTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EB39818115910004E2CB2 /* CommentTable.m */; };
 		BA34012D1829C93E00616C8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA34012C1829C93E00616C8B /* Foundation.framework */; };
 		BA34012F1829C93E00616C8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA34012E1829C93E00616C8B /* CoreGraphics.framework */; };
 		BA3401311829C93E00616C8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3401301829C93E00616C8B /* UIKit.framework */; };
@@ -80,6 +83,12 @@
 		5C0A73E4180FD6F700D23F05 /* ItemVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemVC.m; path = controller/ItemVC.m; sourceTree = "<group>"; };
 		BA0A0989183BA1DD003D9FE6 /* common_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = common_bg.png; sourceTree = "<group>"; };
 		BA0A098B183BA499003D9FE6 /* cell_middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_middle.png; sourceTree = "<group>"; };
+		5C6EB39118114F8F004E2CB2 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = model/Comment.h; sourceTree = "<group>"; };
+		5C6EB39218114F8F004E2CB2 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = model/Comment.m; sourceTree = "<group>"; };
+		5C6EB39418115269004E2CB2 /* CommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommentCell.h; path = controller/item/CommentCell.h; sourceTree = "<group>"; };
+		5C6EB39518115269004E2CB2 /* CommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommentCell.m; path = controller/item/CommentCell.m; sourceTree = "<group>"; };
+		5C6EB39718115910004E2CB2 /* CommentTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommentTable.h; path = controller/CommentTable.h; sourceTree = "<group>"; };
+		5C6EB39818115910004E2CB2 /* CommentTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommentTable.m; path = controller/CommentTable.m; sourceTree = "<group>"; };
 		BA3401291829C93E00616C8B /* 豆脸.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "豆脸.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA34012C1829C93E00616C8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA34012E1829C93E00616C8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -272,6 +281,8 @@
 				BA57769E182D44DC002E9415 /* ItemTable.m */,
 				5C0A73E3180FD6F700D23F05 /* ItemVC.h */,
 				5C0A73E4180FD6F700D23F05 /* ItemVC.m */,
+				5C6EB39718115910004E2CB2 /* CommentTable.h */,
+				5C6EB39818115910004E2CB2 /* CommentTable.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -329,6 +340,8 @@
 				BA577676182BBD54002E9415 /* User.m */,
 				BA577678182BBDDA002E9415 /* Item.h */,
 				BA577679182BBDDA002E9415 /* Item.m */,
+				5C6EB39118114F8F004E2CB2 /* Comment.h */,
+				5C6EB39218114F8F004E2CB2 /* Comment.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -371,6 +384,8 @@
 			children = (
 				BA5776A1182D4708002E9415 /* ItemCell.h */,
 				BA5776A2182D4708002E9415 /* ItemCell.m */,
+				5C6EB39418115269004E2CB2 /* CommentCell.h */,
+				5C6EB39518115269004E2CB2 /* CommentCell.m */,
 			);
 			name = item;
 			sourceTree = "<group>";
@@ -551,9 +566,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA57767D182BC185002E9415 /* DiscoverTable.m in Sources */,
+				5C6EB39618115269004E2CB2 /* CommentCell.m in Sources */,
 				BA57767A182BBDDA002E9415 /* Item.m in Sources */,
 				BA577656182A8BFE002E9415 /* UserInfoSettingVC.m in Sources */,
 				BA577689182BE469002E9415 /* DWTagList.m in Sources */,
+				5C6EB39318114F8F004E2CB2 /* Comment.m in Sources */,
 				BAD9307E1832855100093B6C /* HorizontalBoxes.m in Sources */,
 				BA577698182D4426002E9415 /* MHTabBarController.m in Sources */,
 				BA577677182BBD54002E9415 /* User.m in Sources */,
@@ -566,6 +583,7 @@
 				BA57766D182AAEEC002E9415 /* DiscoverVC.m in Sources */,
 				BA577673182BBCCA002E9415 /* UserCell.m in Sources */,
 				BA5776521829CC6F002E9415 /* SettingsVC.m in Sources */,
+				5C6EB39918115910004E2CB2 /* CommentTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
