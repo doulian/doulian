@@ -63,6 +63,18 @@
     self.users = @[user, user2, user3, user4];
        
     self.navigationItem.title = @"发现";
+    
+    // UI
+    // Remove table cell separator
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    
+    // Assign our own backgroud for the view
+    self.parentViewController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"common_bg"]];
+    self.tableView.backgroundColor = [UIColor clearColor];
+
+    // Add padding to the top of the table view
+    UIEdgeInsets inset = UIEdgeInsetsMake(5, 0, 0, 0);
+    self.tableView.contentInset = inset;
 }
 
 - (void)didReceiveMemoryWarning
@@ -100,6 +112,12 @@
     cell.distance.text = user.location;
     
     [cell.wantedTags setTags:user.wantedItems];
+    
+    // UI
+    UIImage *background = [UIImage imageNamed:@"cell_middle.png"];
+    UIImageView *cellBackgroundView = [[UIImageView alloc] initWithImage:background];
+    cellBackgroundView.image = background;
+    cell.backgroundView = cellBackgroundView;
     
     return cell;
 }

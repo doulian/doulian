@@ -22,18 +22,9 @@
     // UINavigationBar
     UIImage *navBackgroundImage = [UIImage imageNamed:@"navbar_bg"];
     [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
-//    [[UINavigationBar appearance] setTitleTextAttributes:
-//     [NSDictionary dictionaryWithObjectsAndKeys:
-//      [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0],
-//      UITextAttributeTextColor,
-//      [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8],
-//      UITextAttributeTextShadowColor,
-//      [NSValue valueWithUIOffset:UIOffsetMake(0, 1)],
-//      UITextAttributeTextShadowOffset,
-//      [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], UITextAttributeFont, nil]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{
-                                                           UITextAttributeTextColor: [UIColor whiteColor],
-                                                           UITextAttributeFont: [UIFont fontWithName:@"Arial-Bold" size:0.0],
+                                                           NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                           NSFontAttributeName: [UIFont fontWithName:@"Arial-Bold" size:0.0],
                                                            }];
     
     // UIBarButtonItem back
@@ -51,13 +42,19 @@
     [[UIBarButtonItem appearance] setTitleTextAttributes:attributes
                                                 forState:UIControlStateNormal];
     
+    // Tab
+    UIImage* tabBarBackground = [UIImage imageNamed:@"tabbar"];
+    [[UITabBar appearance] setBackgroundImage:tabBarBackground];
+    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected"]];
+
     
     DiscoverTable *discoverVc = [DiscoverTable new];
-    discoverVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageNamed:@"search.png"] tag:0];
+    discoverVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageNamed:@"search"] tag:0];
     UINavigationController *discoverNav = [[UINavigationController alloc] initWithRootViewController:discoverVc];
     
     SettingsVC *settingsVc = [SettingsVC new];
-    settingsVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:[UIImage imageNamed:@"spanner.png"] tag:1];
+    settingsVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:[UIImage imageNamed:@"settings_selected"] tag:1];
+//    settingsVc.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:[UIImage imageNamed:@"settings"] selectedImage:[UIImage imageNamed:@"settings"]];
     UINavigationController *settingNav = [[UINavigationController alloc] initWithRootViewController:settingsVc];
     
     UITabBarController *tab = [UITabBarController alloc];
